@@ -12,6 +12,8 @@ The main goal is to predict the supply chain shipment pricing based on the avail
 factors in the dataset.
 
 
+
+
 ### Software And Tools Requirements
 1. [Github Account](https://github.com)
 2. [VSCodeIDE](https://code.visualstudio.com/)
@@ -23,3 +25,11 @@ factors in the dataset.
 ```
 conda create -p venv python==3.7.6 -y
 ```
+## Technical Aspects
+The whole project has been divided into three parts. These are listed as follows :
+
+• Data Preparation : This consists of storing our data into cassandra database and utilizing it, Data Cleaning, Feature Engineering, Feature Selection, EDA, etc.
+
+• Model Development : In this step, we use the resultant data after the implementation of the previous step to cross validate our Machine Learning model and perform Hyperparameter optimization based on various performance metrics in order to make our model predict as accurate results as possible.
+
+• Model Deployment : This step include creation of a front-end web application using Flask framework with Postman API by using our Pickled model file.
